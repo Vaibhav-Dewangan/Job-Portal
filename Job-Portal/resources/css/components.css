@@ -1,0 +1,11 @@
+/* ==============================
+   job-card-indepth.blade.css
+   ============================== */
+
+@media(min-width:768px) {
+    .job-details {
+        overflow-y: auto;
+        height: 40vh;
+    }
+
+}

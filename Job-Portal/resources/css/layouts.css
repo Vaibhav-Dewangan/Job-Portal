@@ -1,0 +1,67 @@
+/* app.blade.php */
+
+
+
+/* header.blade.php */
+
+@media (min-width:576px) {
+    .header-height {
+        height: 60px;
+    }
+}
+
+@media (min-width:768px) {
+    .header-height {
+        height: 65px;
+    }
+}
+
+@media (min-width:992px) {
+    .header-height {
+        height: 70px;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-height {
+        height: 80px;
+    }
+}
+
+/* footer.blade.php */
+
+.footer-headings {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-para {
+    font-size: small;
+}
+
+.footer-quick-links {
+    font-size: small;
+}
+
+.footer-icon {
+    font-size: large;
+}
+
+@media (min-width:992px) {
+    .footer-headings {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .footer-para {
+        font-size: medium;
+    }
+
+    .footer-quick-links {
+        font-size: medium;
+    }
+
+    .footer-icon {
+        font-size: larger;
+    }
+}
