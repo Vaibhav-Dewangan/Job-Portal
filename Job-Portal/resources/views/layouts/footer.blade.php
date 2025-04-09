@@ -14,7 +14,7 @@
                     <li class="pb-2"><a href="{{ route('home') }}" class="text-white text-decoration-none ">Home</a></li>
                     <li class="pb-2"><a href="{{ route('jobs') }}" class="text-white text-decoration-none ">Jobs</a></li>
                     <li class="pb-2"><a href="{{ route('companies') }}" class="text-white text-decoration-none ">Companies</a></li>
-                    <li class="pb-2"><a href="{{ route('hire') }}" class="text-white text-decoration-none ">Employer/Post Job</a></li>
+                    <li class="pb-2"><a href="{{ route('employer.dashboard') }}" class="text-white text-decoration-none ">Employer/Post Job</a></li>
                 </ul>
             </div>
 

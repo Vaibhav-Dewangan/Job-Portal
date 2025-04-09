@@ -11,29 +11,32 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('employers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('company_name')->unique();
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('user_type');
             $table->string('password');
+            $table->string('company_address')->nullable();
+            $table->string('name');
+            $table->string('industry_sector');
+            $table->string('cover_image')->nullable();
             $table->string('profile_image')->nullable();
-            $table->string('location')->nullable();
-            $table->string('contact')->nullable();
+            $table->string('user_type');
+            $table->string('company_website')->nullable();
+            $table->string('about')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('password_reset_tokens', function (Blueprint $table) {
+        Schema::create('employer_password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
         });
 
-        Schema::create('sessions', function (Blueprint $table) {
+        Schema::create('employer_sessions', function (Blueprint $table) {
             $table->string('id')->primary();
-            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('employer_id')->nullable()->constrained()->onDelete('cascade');
             $table->string('ip_address', 45)->nullable();
             $table->text('user_agent')->nullable();
             $table->longText('payload');
@@ -46,8 +49,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sessions');
-        Schema::dropIfExists('password_reset_tokens');
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('employer_sessions');
+        Schema::dropIfExists('employer_password_reset_tokens');
+        Schema::dropIfExists('employers');
     }
 };

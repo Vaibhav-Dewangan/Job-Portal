@@ -2,6 +2,9 @@
 
 @section('page-class', 'content-margin')
 
+<!-- Header -->
+@include('employees.components.header')
+
 @section('content')
 <div class="container company-page d-flex justify-content-center">
     <div class="mx-2 mx-sm-0 company-page-child">
@@ -65,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
+                    <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
                         <img class="shadow-sm rounded" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" style="height: 50px;">
                         <div>
                             <p class="m-0 text-nowrap">Aerospace & Defense</p>
@@ -74,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
+                    <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
                         <img class="shadow-sm rounded" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" style="height: 50px;">
                         <div>
                             <p class="m-0 text-nowrap">Aerospace & Defense</p>
@@ -83,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
+                    <div class="justify-content-evenly align-items-center comp-category-card md-sm-0 rounded-4 d-flex">
                         <img class="shadow-sm rounded" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" style="height: 50px;">
                         <div>
                             <p class="m-0 text-nowrap">Aerospace & Defense</p>

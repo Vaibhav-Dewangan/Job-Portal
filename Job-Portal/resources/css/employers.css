@@ -1,0 +1,179 @@
+/* ===================
+   index.blade.php
+   ===================*/
+
+.steps-card {
+    height: 11rem;
+    padding: .8rem;
+}
+
+.e-hero-section {
+    height: 20rem;
+}
+
+.step-container {
+    min-height: 90vh;
+}
+
+.content-margin-employer {
+    margin-top: 2rem;
+}
+
+.steps-card-container {
+    position: absolute;
+    top: -50px;
+    gap: 1rem;
+}
+
+/* max-sm */
+@media (max-width:576px) {
+    .shadow-on {
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .steps-card-container {
+        width: 80vw;
+    }
+
+    .employer-container {
+        min-height: 110vh;
+    }
+
+}
+
+/* sm */
+@media (min-width:576px) {
+    .e-hero-section {
+        height: 21rem;
+    }
+
+    .steps-card-container {
+        position: absolute;
+        top: -80px;
+        width: 85vw;
+
+    }
+
+    .content-margin-employer {
+        margin-top: 2.4rem;
+    }
+
+    .steps-card {
+        height: 9rem;
+        padding: 1rem;
+    }
+
+    .step-container {
+        min-height: 70vh;
+    }
+
+}
+
+/* md */
+@media (min-width:768px) {
+    .steps-card-container {
+        width: 90vw;
+    }
+
+    /* .employer-container { */
+        /* background-image: linear-gradient(to top, #fff1eb 40%, #ace0f9 100%); */
+        /* background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%); */
+        /* background-image: linear-gradient(to top, #dfe9f3 65%, white 100%); */
+    /* } */
+
+    .steps-card {
+        height: 14rem;
+        padding: 1rem;
+    }
+
+    .step-container {
+        min-height: 50vh;
+    }
+
+    .content-margin-employer {
+        margin-top: 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    /* .e-hero-section { */
+        /* background-image: linear-gradient(to top, #fff1eb 40%, #ace0f9 100%); */
+        /* background-color: #2950cf; */
+
+    /* } */
+}
+
+/* lg */
+@media (min-width:992px) {
+    .steps-card-container {
+        width: 80vw;
+    }
+
+    .steps-card {
+        height: 15rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .e-hero-section {
+        height: 22rem;
+    }
+
+}
+
+/* xl */
+@media (min-width:1200px) {
+    .steps-card-container {
+        width: 65vw;
+        top: -95px;
+    }
+}
+
+/* xxl */
+@media (min-width:1400px) {
+    .steps-card-container {
+        width: 70vw;
+        top: -110px;
+    }
+
+    .content-margin-employer {
+        margin-top: 3.7rem;
+    }
+}
+
+/* =====================
+   company_page.blade.php
+   ===================== */
+
+.cover-img {
+    height: 5.5rem;
+}
+.company-logo{
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+@media (min-width:576px){
+    .company-logo{
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+
+}
+
+@media (min-width:992px){
+    .company-logo{
+        height: 7rem;
+        width: 7rem;
+    }
+
+}
+
+@media (min-width:1200px){
+    .company-logo{
+        height: 9rem;
+        width: 9rem;
+    }
+
+}

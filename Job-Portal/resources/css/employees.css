@@ -7,12 +7,12 @@
 }
 
 .hero-section {
-    height: 40vh;
+    height: 20rem;
 }
 
 .feature-position {
     position: absolute;
-    top: -35px;
+    top: -15px;
 }
 
 /* max-sm */
@@ -38,7 +38,7 @@
     }
 
     .hero-section {
-        height: 50vh;
+        height: 22rem;
     }
 
     .feature-position {
@@ -58,19 +58,19 @@
         width: 90vw;
     }
 
-    .home-container {
+    /* .home-container { */
         /* background-image: linear-gradient(to top, #fff1eb 40%, #ace0f9 100%); */
         /* background-image: linear-gradient(to top, #dfe9f3 65%, white 100%); */
-        background-image: linear-gradient(to top, #fcf0eb 40%, #cde7f4 100%);
-    }
+        /* background-image: linear-gradient(to top, #fcf0eb 40%, #cde7f4 100%); */
+    /* } */
 
 }
 
 @media (max-width:768px) {
-    .hero-section {
+    /* .hero-section { */
         /* background-image: linear-gradient(to top, #fff8f5 40%, #c3e6f7 100%); */
-        background-image: linear-gradient(to top, #fcf0eb 40%, #cde7f4 100%);
-    }
+        /* background-image: linear-gradient(to top, #fcf0eb 40%, #cde7f4 100%); */
+    /* } */
 }
 
 /* lg */
@@ -81,6 +81,11 @@
 
     .feature-position {
         width: 75vw;
+    }
+
+    
+    .hero-section {
+        height: 23rem;
     }
 
 }
@@ -101,7 +106,7 @@
 }
 
 /* ==============
-   job.blade.php 
+   index.blade.php 
    ==============*/
 
 .content-margin {
@@ -210,129 +215,6 @@
     }
 }
 
-/* ===================
-   employers.blade.php
-   ===================*/
-
-.steps-card {
-    height: 11rem;
-    padding: .8rem;
-}
-
-.e-hero-section {
-    height: 40vh;
-}
-
-.step-container {
-    min-height: 90vh;
-}
-
-.steps-card-container {
-    position: absolute;
-    top: -50px;
-    gap: 1rem;
-}
-
-/* max-sm */
-@media (max-width:576px) {
-    .shadow-on {
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    .steps-card-container {
-        width: 80vw;
-    }
-
-    .employer-container {
-        min-height: 110vh;
-    }
-
-}
-
-/* sm */
-@media (min-width:576px) {
-    .e-hero-section {
-        height: 50vh;
-    }
-
-    .steps-card-container {
-        position: absolute;
-        top: -80px;
-        width: 85vw;
-
-    }
-
-    .steps-card {
-        height: 9rem;
-        padding: 1rem;
-    }
-
-    .step-container {
-        min-height: 70vh;
-    }
-
-}
-
-/* md */
-@media (min-width:768px) {
-    .steps-card-container {
-        width: 90vw;
-    }
-
-    .employer-container {
-        /* background-image: linear-gradient(to top, #fff1eb 40%, #ace0f9 100%); */
-        /* background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%); */
-        background-image: linear-gradient(to top, #dfe9f3 65%, white 100%);
-    }
-
-    .steps-card {
-        height: 14rem;
-        padding: 1rem;
-    }
-
-    .step-container {
-        min-height: 50vh;
-    }
-
-}
-
-@media (max-width:768px) {
-    .e-hero-section {
-        background-image: linear-gradient(to top, #fff1eb 40%, #ace0f9 100%);
-        /* background-color: #2950cf; */
-
-    }
-}
-
-/* lg */
-@media (min-width:992px) {
-    .steps-card-container {
-        width: 80vw;
-    }
-
-    .steps-card {
-        height: 15rem;
-        padding: 1rem;
-        padding-top: 1.5rem;
-    }
-
-}
-
-/* xl */
-@media (min-width:1200px) {
-    .steps-card-container {
-        width: 65vw;
-        top: -95px;
-    }
-}
-
-/* xxl */
-@media (min-width:1400px) {
-    .steps-card-container {
-        width: 70vw;
-        top: -110px;
-    }
-}
 
 /* =======================
    user_account.blade.php
@@ -341,6 +223,9 @@
 .profile-img {
     height: 5.5rem;
 }
+.user-acc-container {
+    min-height: 89vh;
+}
 
 .image-name {
     flex-direction: column-reverse;
@@ -348,20 +233,22 @@
     gap: 1rem;
 }
 
-.text-truncate{
+.text-truncate {
     max-width: 9rem;
 }
 
-@media (min-width:576px){
+@media (min-width:576px) {
     .image-name {
         flex-direction: row;
         align-items: center;
         gap: 1rem;
     }
+
     .profile-img {
         height: 5.5rem;
     }
-    .text-truncate{
+
+    .text-truncate {
         max-width: 20rem;
     }
 }

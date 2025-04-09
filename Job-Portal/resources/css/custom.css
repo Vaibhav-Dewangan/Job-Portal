@@ -1,0 +1,79 @@
+/* ==========
+   Custom Css
+   ========== */
+
+.blur-effect {
+    backdrop-filter: blur(10px);
+}
+
+.bg-light-gray {
+    background-color: rgb(244, 244, 244);
+}
+
+.content-width {
+    width: fit-content;
+}
+
+.font-xs {
+    font-size: 0.8em;
+}
+
+.font-sm {
+    font-size: 1em;
+}
+
+.fs-5-half {
+    font-size: large;
+}
+
+.text-golden {
+    color: rgb(197, 167, 0);
+}
+
+@media (min-width: 576px) {
+
+    /* md breakpoint */
+    .shadow-sm-cstm {
+        box-shadow: 0px 0px 15px gray;
+    }
+
+    .fs-sm-2 {
+        font-size: 2rem !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* md breakpoint */
+    .shadow-md {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .border-md-3 {
+        border-width: 3px !important;
+    }
+
+    .shadow-md-cstm {
+        box-shadow: 0px 0px 15px gray;
+    }
+
+    .fs-md-1 {
+        font-size: 2.5rem !important;
+    }
+
+    .fs-md-5 {
+        font-size: 1.25rem !important;
+    }
+
+    .fs-sm-6{
+        font-size: 0.9rem !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .fs-sm-6{
+        font-size: 1rem !important;
+    }
+}

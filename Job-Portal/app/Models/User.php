@@ -20,7 +20,12 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'user_type',
         'password',
+        'profile_image',
+        'contact',
+        'location',
+        'email',
     ];
 
     /**
@@ -44,5 +49,15 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function applications()
+    {
+        return $this->hasMany(JobApplication::class);
+    }
+
+    public function savedJobs()
+    {
+        return $this->hasMany(SavedJob::class);
     }
 }

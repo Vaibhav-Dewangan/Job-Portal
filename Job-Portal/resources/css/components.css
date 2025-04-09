@@ -9,3 +9,12 @@
     }
 
 }
+
+/* ==============================
+   job-card.blade.css
+   ============================== */
+
+.job-card.active {
+    border-left: 5px solid #0d6efd !important;
+    background-color: #f8f9fa;
+}
