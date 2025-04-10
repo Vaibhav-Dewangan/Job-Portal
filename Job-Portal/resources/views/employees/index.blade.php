@@ -24,13 +24,12 @@
 
         <section class="col-md overflow-y-auto">
 
-            <!-- Upload Resume -->
             <div class="mx-4 border-3 border-bottom py-2 ">
-                <a class="text-decoration-none text-black font-sm fw-semibold" href="">
-                    <p>
-                        <span class="text-primary">Upload your CV</span> and find your next job on {{config('app.name')}}!
-                    </p>
-                </a>
+
+                <p>
+                    <span class="text-black font-sm fw-semibold">Find your next job on {{config('app.name')}}!
+                </p>
+
             </div>
 
             <!-- Searched text -->

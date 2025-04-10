@@ -12,7 +12,6 @@ use App\Http\Controllers\Employers\EditJobController;
 use App\Http\Controllers\Employers\AppliedJobController;
 
 
-
 /* =============
      Employees
    ============= */
