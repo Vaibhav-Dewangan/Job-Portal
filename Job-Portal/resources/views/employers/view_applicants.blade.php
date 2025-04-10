@@ -14,8 +14,12 @@
         <div class="card-body">
             <h5>{{ $app->user->name }}</h5>
             <p><strong>Email:</strong> {{ $app->user->email }}</p>
-            <p><strong>Contact:</strong> {{ $app->user->contact ?? 'N/A' }}</p>
-            <p><strong>Location:</strong> {{ $app->user->location ?? 'N/A' }}</p>
+            @if(!empty($app->user->contact))
+            <p><strong>Contact:</strong> {{ $app->user->contact }}</p>
+            @endif
+            @if(!empty($app->user->location))
+            <p><strong>Location:</strong> {{ $app->user->location }}</p>
+            @endif
             <p><strong>Cover Letter:</strong><br> {{ $app->cover_letter ?? 'Not provided' }}</p>
             @if($app->resume)
             <a href="{{ asset('storage/' . $app->resume) }}" target="_blank" class="btn btn-sm btn-primary">View Resume</a>

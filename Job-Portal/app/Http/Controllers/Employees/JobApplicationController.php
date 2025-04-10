@@ -25,6 +25,7 @@ class JobApplicationController extends Controller
             return redirect()->back()->with('warning', 'You have already applied for this job.');
         }
 
+        
         $resumePath = $request->file('resume')->store('resumes', 'public');
 
         JobApplication::create([

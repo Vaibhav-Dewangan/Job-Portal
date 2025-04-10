@@ -22,6 +22,11 @@
                             value="{{old('location', $job->location)}}">
                     </div>
                     <div class="mb-3 text-start">
+                        <label for="location" class="form-label text-body-emphasis">Website Link</label>
+                        <input type="text" class="form-control" id="company_website" name="company_website" placeholder="Enter website link"
+                            value="{{old('company_website', $job->company_website)}}">
+                    </div>
+                    <div class="mb-3 text-start">
                         <label for="salary" class="form-label text-body-emphasis">Salary</label>
                         <div class="input-group">
                             <span class="input-group-text">Rs</span>

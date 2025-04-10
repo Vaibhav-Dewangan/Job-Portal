@@ -40,4 +40,10 @@ class JobController extends Controller
         $job = PostedJob::findOrFail($id);
         return view('employees.components.job_card_indepth', compact('job'));
     }
+
+    public function showSavedApplied($for, $id)
+    {
+        $job = PostedJob::findOrFail($id);
+        return view('employees.job_applied_saved_details', compact('job'));
+    }
 }

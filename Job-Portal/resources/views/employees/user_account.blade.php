@@ -71,7 +71,7 @@
                         <p class="card-text text-muted mb-1">{{ $saved->job->company_name }}</p>
                         <p class="card-text"><i class="bi bi-geo-alt-fill me-2"></i>{{ $saved->job->location }}</p>
                         <div class="d-flex gap-2">
-                            <a href="{{ route('job.show', $saved->job->id) }}" class="btn btn-sm btn-outline-primary">View Job</a>
+                            <a href="{{ route('job.show.saved-applied',['for' => 'saved', 'id' => $saved->job->id]) }}" class="btn btn-sm btn-outline-primary">View Job</a>
 
                             <!-- Unsave form -->
                             <form action="{{ route('job.unsave', $saved->job->id) }}" method="POST" onsubmit="return confirm('Remove this job from saved?')">
@@ -101,7 +101,7 @@
                         <h5 class="card-title">{{ $applied->job->job_title }}</h5>
                         <p class="card-text text-muted mb-1">{{ $applied->job->company_name }}</p>
                         <p class="card-text"><i class="bi bi-geo-alt-fill me-2"></i>{{ $applied->job->location }}</p>
-                        <a href="{{ route('job.show', $applied->job->id) }}" class="btn btn-sm btn-outline-success">View Job</a>
+                        <a href="{{ route('job.show.saved-applied',['for' => 'applied', 'id' => $applied->job->id]) }}" class="btn btn-sm btn-outline-success">View Job</a>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,6 @@
     </div>
 
 </div>
-
 @endsection
 
 @push('scripts')

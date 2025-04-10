@@ -1,4 +1,12 @@
-<div class="container">
+@extends('layouts.app')
+
+@section('page-class', 'content-margin-home')
+
+<!-- Header -->
+@include('employees.components.header')
+
+@section('content')
+<div class="container py-4 mb-3" style="max-width: 993px;">
     <!-- Job Main Section -->
     <div class="mt-4" data-id="$job->id">
         <p class="fs-3 fw-bold m-0 ">{{ $job->job_title }}</p>
@@ -60,7 +68,7 @@
         <hr>
 
         <!-- Job Details -->
-        <section class="job-details">
+        <section class="">
             <div>
                 <p class="fs-5 fw-bold m-0 ">Job Details</p>
 
@@ -197,3 +205,4 @@
     </div>
 
 </div>
+@endsection

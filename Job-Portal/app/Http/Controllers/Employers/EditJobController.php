@@ -26,6 +26,7 @@ class EditJobController extends Controller
             'qualifications'  => 'nullable|string',
             'industry_sector' => 'required|string',
             'skills'          => 'required|string',
+            'company_website' => 'nullable|string',
         ]);
 
         $job = PostedJob::where('id', $request->job_id)
@@ -46,6 +47,7 @@ class EditJobController extends Controller
             'qualifications'   => $request->qualifications,
             'industry_sector'  => $request->industry_sector,
             'skills'           => $request->skills,
+            'company_website'  => $request->company_website,
         ]);
 
         return redirect()->back()->with('success', 'Job updated successfully!');

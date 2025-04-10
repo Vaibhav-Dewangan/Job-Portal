@@ -23,6 +23,7 @@ class PostedJob extends Model
         'industry_sector',
         'skills',
         'employer_id',
+        'company_website',
     ];
 
     protected $casts = [

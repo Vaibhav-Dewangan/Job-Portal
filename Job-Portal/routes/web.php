@@ -48,6 +48,7 @@ Route::prefix('employee')->group(function () {
     // Employee/jobs
     Route::get('/jobs', [JobController::class, 'index'])->name('jobs');
     Route::get('/job/{id}', [JobController::class, 'show'])->name('job.show');
+    Route::get('/job/{for}/{id}', [JobController::class, 'showSavedApplied'])->name('job.show.saved-applied');
     Route::get('/job-detail/{id}', [JobController::class, 'showForMd']);
 
     // Employee/companies

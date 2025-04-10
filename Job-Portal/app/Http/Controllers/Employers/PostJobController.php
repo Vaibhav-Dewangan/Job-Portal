@@ -21,10 +21,11 @@ class PostJobController extends Controller
             'job_type'        => 'required|string',
             'schedule'        => 'required|array',
             'description'     => 'required|string',
-            'responsibilities'=> 'nullable|string',
+            'responsibilities' => 'nullable|string',
             'qualifications'  => 'nullable|string',
             'industry_sector' => 'required|string',
             'skills'          => 'required|string',
+            'company_website' => 'nullable|string',
         ]);
 
         PostedJob::create([
@@ -43,6 +44,7 @@ class PostJobController extends Controller
             'industry_sector'  => $request->industry_sector,
             'skills'           => $request->skills,
             'employer_id'      => Auth::guard('employer')->id(),
+            'company_website'  => $request->company_website,
         ]);
 
         return redirect()->back()->with('success', 'Job posted successfully!');

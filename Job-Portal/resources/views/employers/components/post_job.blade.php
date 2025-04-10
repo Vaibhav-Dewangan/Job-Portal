@@ -18,6 +18,10 @@
                         <input type="text" class="form-control" id="location" name="location" placeholder="Enter Location">
                     </div>
                     <div class="mb-3 text-start">
+                        <label for="location" class="form-label text-body-emphasis">Website Link</label>
+                        <input type="text" class="form-control" id="company_website" name="company_website" placeholder="Enter website link">
+                    </div>
+                    <div class="mb-3 text-start">
                         <label for="salary" class="form-label text-body-emphasis">Salary</label>
                         <div class="input-group">
                             <span class="input-group-text">Rs</span>
