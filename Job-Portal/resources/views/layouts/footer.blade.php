@@ -5,6 +5,7 @@
             <div class="col-sm-4">
                 <h5 class="footer-headings">About Us</h5>
                 <p class="footer-para">{{config('app.name')}} is your go-to platform for job opportunities and career growth.</p>
+                <p class="footer-para">Email : <a href="" class="text-white text-decoration-none ">careernest@gmail.com</a></p>
             </div>
 
             <!-- Quick Links -->

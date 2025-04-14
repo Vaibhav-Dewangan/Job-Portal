@@ -65,7 +65,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             @forelse ($savedJobs as $saved)
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h5 class="card-title">{{ $saved->job->job_title }}</h5>
                         <p class="card-text text-muted mb-1">{{ $saved->job->company_name }}</p>
@@ -96,7 +96,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             @forelse ($appliedJobs as $applied)
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h5 class="card-title">{{ $applied->job->job_title }}</h5>
                         <p class="card-text text-muted mb-1">{{ $applied->job->company_name }}</p>

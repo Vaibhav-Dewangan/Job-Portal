@@ -5,11 +5,19 @@ namespace App\Http\Controllers\Employees;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\JobApplication;
+use App\Models\PostedJob;
 use App\Models\SavedJob;
 use Illuminate\Support\Facades\Auth;
 
 class JobApplicationController extends Controller
 {
+
+    public function showApplyForm($id)
+    {
+        $job = PostedJob::findOrFail($id);
+        return view('employees.apply_form', compact('job'));
+    }
+
     public function apply(Request $request, $id)
     {
         $request->validate([
@@ -25,7 +33,7 @@ class JobApplicationController extends Controller
             return redirect()->back()->with('warning', 'You have already applied for this job.');
         }
 
-        
+
         $resumePath = $request->file('resume')->store('resumes', 'public');
 
         JobApplication::create([
@@ -35,7 +43,7 @@ class JobApplicationController extends Controller
             'resume' => $resumePath,
         ]);
 
-        return redirect()->back()->with('success', 'Application submitted successfully!');
+        return redirect()->route('jobs')->with('success', 'Application submitted successfully!');
     }
 
     public function save($id)
@@ -52,7 +60,7 @@ class JobApplicationController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('success', 'Job saved successfully!');
+        return redirect()->back()->with('success_', 'Job saved successfully!');
     }
 
     public function unsave($id)
@@ -65,7 +73,7 @@ class JobApplicationController extends Controller
 
         if ($savedJob) {
             $savedJob->delete();
-            return redirect()->back()->with('success', 'Job unsaved successfully!');
+            return redirect()->back()->with('success_', 'Job unsaved successfully!');
         }
 
         return redirect()->back()->with('warning', 'This job is not in your saved list.');

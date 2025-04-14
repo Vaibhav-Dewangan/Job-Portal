@@ -27,10 +27,6 @@
     <hr class="my-1">
     <a class="nav-link d-flex justify-content-between align-items-center" href="{{ route('home') }}">Find Jobs <i class="bi bi-chevron-right"></i></a>
     <hr class="my-1">
-    <a class="nav-link d-flex justify-content-between align-items-center" href="">Contact Us <i class="bi bi-chevron-right"></i></a>
-    <hr class="my-1">
-    <a class="nav-link d-flex justify-content-between align-items-center" href="">Help <i class="bi bi-chevron-right"></i></a>
-    <hr class="my-1">
     @if(Auth::guard('employer')->check())
     <form class="d-flex justify-content-between m-0 align-items-center" action="{{ route('employer.logout') }}" method="post">
         @csrf

@@ -58,24 +58,24 @@
         <div class="row feature-position border-start border-5 border-primary  mx-auto bg-light rounded-5 px-2 py-4 px-md-3 py-md-4 px-lg-4 shadow-lg">
             <div class="col-sm-4">
                 <i class="bi bi-briefcase-fill display-6 text-secondary"></i>
-                <h4 class="mt-3 d-none d-lg-block ">Top Companies</h4>
-                <h6 class="mt-3 d-lg-none ">Top Companies</h6>
-                <p class="d-none d-lg-block ">Find jobs from the best employers in the industry.</p>
-                <p class="small d-lg-none ">Find jobs from the best employers in the industry.</p>
+                <h4 class="mt-3 d-none d-xl-block ">Top Companies</h4>
+                <h6 class="mt-3 d-xl-none ">Top Companies</h6>
+                <p class="d-none d-xl-block ">Find jobs from the best employers in the industry.</p>
+                <p class="small d-xl-none ">Find jobs from the best employers in the industry.</p>
             </div>
             <div class="col-sm-4 ">
                 <i class="bi bi-search display-6 text-secondary"></i>
-                <h4 class="mt-3 d-none d-lg-block ">Smart Search</h4>
-                <h6 class="mt-3 d-lg-none ">Smart Search</h6>
-                <p class="d-none d-lg-block">Use our search filters to find the perfect job.</p>
-                <p class="small d-lg-none">Use our search filters to find the perfect job.</p>
+                <h4 class="mt-3 d-none d-xl-block ">Smart Search</h4>
+                <h6 class="mt-3 d-xl-none ">Smart Search</h6>
+                <p class="d-none d-xl-block">Use our search filters to find the perfect job.</p>
+                <p class="small d-xl-none">Use our search filters to find the perfect job.</p>
             </div>
             <div class="col-sm-4">
                 <i class="bi bi-person-check-fill display-6 text-secondary"></i>
-                <h4 class="mt-3 d-none d-lg-block ">Easy Apply</h4>
-                <h6 class="mt-3 d-lg-none ">Easy Apply</h6>
-                <p class="d-none d-lg-block">Apply for jobs in just a few clicks.</p>
-                <p class="small d-lg-none">Apply for jobs in just a few clicks.</p>
+                <h4 class="mt-3 d-none d-xl-block ">Easy Apply</h4>
+                <h6 class="mt-3 d-xl-none ">Easy Apply</h6>
+                <p class="d-none d-xl-block">Apply for jobs in just a few clicks.</p>
+                <p class="small d-xl-none">Apply for jobs in just a few clicks.</p>
             </div>
         </div>
     </section>

@@ -33,6 +33,7 @@ Route::prefix('employee')->group(function () {
     // Employee/UserAccount
     Route::middleware('auth:web')->group(function () {
         Route::get('/profile', [EmployeeController::class, 'showEmployeeData'])->name('user-account');
+        Route::get('/jobs/{id}/apply', [JobApplicationController::class, 'showApplyForm'])->name('show.apply');
         Route::post('/jobs/{id}/apply', [JobApplicationController::class, 'apply'])->name('job.apply');
         Route::post('/jobs/{id}/save', [JobApplicationController::class, 'save'])->name('job.save');
         Route::delete('/job/{id}/unsave', [JobApplicationController::class, 'unsave'])->name('job.unsave');

@@ -32,9 +32,7 @@
             </button>
             @else
             <!-- Apply Button -->
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal-{{$job->id}}">
-                Apply
-            </button>
+            <a href="{{ route('show.apply', $job->id) }}" class="btn btn-primary mb-2">Apply</a>
             @endif
 
             @if(Auth::user()->savedJobs->contains('posted_job_id', $job->id))

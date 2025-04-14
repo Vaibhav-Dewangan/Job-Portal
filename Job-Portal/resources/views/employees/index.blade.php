@@ -9,6 +9,20 @@
 @section('content')
 <div class="container homepage width justify-content-center">
 
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
+
+    @if (session('warning'))
+    <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+        {{ session('warning') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
+
     <!-- Search -->
     <section class="container-fluid search-section my-4 ">
         <form action="{{ route('jobs') }}" method="GET"
@@ -62,47 +76,7 @@
         </section>
     </div>
 
-
-
 </div>
-
-@if($jobs->count())
-<!-- Apply Modal -->
-<div class="modal fade" id="applyModal-{{$job->id}}" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <form class="modal-content" action="{{ route('job.apply', $job->id) }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="modal-header">
-                <h5 class="modal-title" id="applyModalLabel">Apply for {{ $job->job_title }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Cover Letter -->
-                <div class="mb-3">
-                    <label for="cover_letter" class="form-label">Cover Letter</label>
-                    <textarea name="cover_letter" class="form-control" rows="4" required></textarea>
-                </div>
-
-                <!-- Resume Upload -->
-                <div class="mb-3">
-                    <label for="resume-{{$job->id}}" class="form-label">Upload Resume (PDF)</label>
-                    <input type="file" name="resume" id="resume-upload-{{$job->id}}" accept=".pdf" class="form-control resume-input" required>
-                </div>
-
-                <!-- PDF Preview -->
-                <div id="resume-preview-{{$job->id}}" class="d-none">
-                    <label class="form-label">Resume Preview:</label>
-                    <iframe id="resume-frame-{{$job->id}}" width="100%" height="400px" style="border: 1px solid #ccc;"></iframe>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Submit Application</button>
-            </div>
-        </form>
-    </div>
-</div>
-@endif
 
 @endsection
 
